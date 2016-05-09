@@ -1,0 +1,49 @@
+<ion-view view-title="兑换卷详细">
+  <ion-content class="padding">
+
+    <div class="carddiv">
+      <img src="{{card}}" class="cardimg">
+
+      <div class="row">
+        <span class="col-80">描述描述描述</span>
+        <label class="col-20" ng-bind="price">1000</label>
+      </div>
+      <hr/>
+
+      <div class="row cardprice">
+        <button class="button button-stable col-25" ng-click="cardsbtn(1)">1000</button>
+        <button class="button button-stable col-25" ng-click="cardsbtn(2)">2000</button>
+        <button class="button button-stable col-25" ng-click="cardsbtn(3)">3000</button>
+        <button class="button button-stable col-25" ng-click="cardsbtn(4)">4000</button>
+
+      </div>
+
+      <div class="row" style="margin-top: 0.5rem">
+        <p class="col-25">购买数量</p>
+
+        <div class="col-80 cardnum">
+          <button class="button button-stable col-25" ng-click="reducenum()">-</button>
+          <input type="text" class="col-25" style="display:inline" ng-model="num"/>
+          <button class="button button-stable col-25" ng-click="addnum()">+</button>
+        </div>
+      </div>
+<div>
+<span>兑换券使用流程</span>
+<p>
+  orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+</p>
+</div>
+
+      <div class="row card-footer-btn">
+        <div class="col-25"><i class="ion-ios-star"></i></div>
+        <div class="col-25"> <button class="button button-stable ">在线</button></div>
+        <div class="col-25"><button class="button button-stable ">加入购物车</button></div>
+        <div class="col-25"><button class="button button-stable ">立即购买</button></div>
+      </div>
+
+    </div>
+
+
+  </ion-content>
+</ion-view>

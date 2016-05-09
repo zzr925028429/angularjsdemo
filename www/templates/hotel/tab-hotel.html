@@ -1,0 +1,56 @@
+<ion-view view-title="酒店">
+  <ion-content>
+
+
+    <div class="list">
+      <label class="item item-input hotelitem">
+        <div class="row">
+          <div class="col col-20"><label>目的地</label></div>
+          <div class="col col-60"><input type="text" placeholder="北京" class="mudi"></div>
+          <div class="col col-20 location"  ng-click="mylocation()">
+            <i class="ion-ios-location"><br>
+              <label id="wzlabel">我的位置</label></i>
+          </div>
+        </div>
+      </label>
+
+      <label class="item item-input hotelitem">
+        <div class="row">
+          <div class="col col-20"><label>入住日期</label></div>
+          <div class="col col-60"><input type="text" placeholder="Last Name"></div>
+        </div>
+      </label>
+
+      <label class="item item-input hotelitem">
+        <div class="row">
+          <div class="col col-20"><label>退房日期</label></div>
+          <div class="col col-60"><input type="text" placeholder="Last Name"></div>
+        </div>
+      </label>
+      <label class="item item-input hotelitem">
+        <div class="row">
+          <div class="col col-20"><label>酒店级别</label></div>
+          <div class="col col-60">
+            <select>
+            <option selected>不限</option>
+            <option >五星</option>
+              <option>四星</option>
+            <option>三星</option>
+          </select></div>
+        </div>
+      </label>
+      <label class="item item-input hotelitem">
+        <div class="row">
+          <div class="col col-20"><label>关键词</label></div>
+          <div class="col col-60"><input type="text" placeholder="酒店名称"></div>
+        </div>
+      </label>
+      <label class="item hotelitem">
+      <button class="button button-block button-positive" ng-click="selecthotel()">
+        搜索
+      </button>
+        </label>
+    </div>
+
+  </ion-content>
+</ion-view>

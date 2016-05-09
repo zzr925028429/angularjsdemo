@@ -1,0 +1,110 @@
+<ion-view view-title="路线详情">
+
+  <ion-content>
+<div class="list">
+<div class="item detitem">
+  <div class="deimg"><img src="img/adam.jpg"></div>
+  <span class="deroute-span">
+    北京到海南海口双飞6日游 海口进出 呀诺达 蜈支洲 分界洲
+    全程四晚当地海边4星度假酒店 迪克维拉温泉酒店住宿</span>
+  <div class="row">
+    <div class="col-67">
+      <label>出发地:</label><label>111</label>
+    </div>
+    <div class="col-33">
+      <label>线路编号:</label><label>111</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-67">
+      <label>目的地:</label><label>111</label>
+    </div>
+    <div class="col-33">
+      <label>行程天数:</label><label>111</label>
+    </div>
+  </div>
+  <span style="font-size: 25px;color: red;margin-left: 0.3rem;">
+    5555
+  </span>
+</div>
+
+  <div class="item">
+   <span>选择出行日期</span>
+    <onezone-datepicker datepicker-object="onezoneDatepicker">
+      <button class="button button-block button-outline button-positive show-onezone-datepicker">
+        {{onezoneDatepicker.date | date:'dd MMMM yyyy'}}
+      </button>
+    </onezone-datepicker>
+  </div>
+  <div class="item detitem2">
+    <div style="width: 100%">
+    <label class="detitle">产品特色</label>
+    </div>
+<span style="font-size: 10px">
+★ 全程四晚当地4星海滨度假酒店Dickwella Resort&Spat 迪克维拉温泉酒店住宿，感受锡兰王国静谧优雅的住宿环
+</span><br/>
+    <span style="font-size: 10px">
+★ 全程四晚当地4星海滨度假酒店Dickwella Resort&Spat 迪克维拉温泉酒店住宿，感受锡兰王国静谧优雅的住宿环
+</span>
+  </div>
+  <div class="item detitem2">
+    <div style="width: 100%">
+      <label class="detitle">行程介绍</label>
+    </div>
+    <div style="width: 100%" >
+      <label style="font-size: 13px;color: black">第一天 ....</label>
+      <p style="text-indet:2em;white-space: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+    <img style="height: 4rem" src="img/ben.png">
+    </div>
+    <div style="width: 100%" >
+      <label style="font-size: 13px;color: black">第二天 ....</label>
+      <p style="text-indet:2em;white-space: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+
+    </div>
+
+    <div class="item detitem2">
+      <div style="width: 100%">
+        <label class="detitle">费用说明</label>
+      </div>
+     <div>
+       <label>费用包含</label><br>
+       <span>
+         asdsadsafadsfdfdf
+       </span>
+      </div>
+      <div>
+        <label>费用不包含</label><br>
+        <span>asdsadfasfdsafas</span>
+      </div>
+    </div>
+
+    <div class="item detitem2">
+      <div style="width: 100%">
+      <label class="detitle">预定说明</label>
+    </div>
+      <p style="text-indet:2em;white-space: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+
+    </div>
+
+    <div class="item" style="padding: 5px;background-color: #8f8f8f">
+      <div class="row">
+        <div class="col-10">.col</div>
+        <div class="col-10">.col</div>
+        <div class="col-10">.col</div>
+        <div class="col-10">.col</div>
+        <div class="col-10"><i class="ion-ios-star"></i></div>
+        <div class="col-25">
+          <button class="button button-energized bottom-btn">
+          在线客服
+        </button></div>
+        <div class="col-25">
+          <button class="button button-assertive bottom-btn" ng-click="goorder()">
+          立即购买
+        </button></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>

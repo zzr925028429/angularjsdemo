@@ -1,0 +1,203 @@
+<ion-view view-title="首页">
+  <ion-content class="padding">
+    <div class="list home">
+      <div class="item item-input-inset search-item">
+        <label class="item-input-wrapper">
+          <input type="text" placeholder="路线">
+        </label>
+        <button class="button button-small">
+          搜索
+        </button>
+      </div>
+      <!--轮播-->
+      <div class="item slideitem">
+        <ion-slide-box class="slidebox" auto-play="true" show-pager="true"
+                       slide-interval="4000" delegate-handle="slideimgs" does-continue="true" pager-click="goid(index)"
+                       on-slide-changed="go_changed(index)">
+          <ion-slide ng-repeat="imginfo in slideimgs">
+            <div class="box">
+              <img ng-src="{{imginfo.face}}" ng-click="slideimg(imginfo.id)">
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+
+      <div class="item row itemrow">
+        <div class="col col-25" ui-sref="tab.route">
+          <div style="width: 100%">
+            <img src="/img/perry.png">
+          </div>
+          <span>旅游线路</span>
+        </div>
+        <div class="col col-25" ui-sref="tab.hotel">
+          <div style="width: 100%">
+            <img src="/img/perry.png">
+          </div>
+          <span>酒店度假</span>
+        </div>
+        <div class="col col-25" ui-sref="tab.exchange">
+          <div style="width: 100%">
+            <img src="/img/perry.png">
+          </div>
+          <span>电子兑换券</span>
+        </div>
+        <div class="col col-25" ui-sref="tab.user">
+          <div style="width: 100%">
+            <img src="/img/perry.png">
+          </div>
+          <span>用户中心</span>
+        </div>
+      </div>
+      <div class="item rtitem">
+        <div style="width: 100%;height: auto">
+          <label class="route-label">热销推荐</label>
+        </div>
+
+        <div class="row" style="width: 100%">
+          <div class="routeimgdiv col-50" ng-click="rxitem()">
+            <img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item rtitem">
+        <div style="width: 100%;height: auto">
+          <label class="route-label">热门目的地推荐</label>
+        </div>
+
+        <div class="row itemrow">
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/adam.jpg">
+            </div>
+            <span style="width: 100%;">北京</span>
+          </div>
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/adam.jpg">
+            </div>
+            <span>北京</span>
+          </div>
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/adam.jpg">
+            </div>
+            <span>北京</span>
+          </div>
+
+        </div>
+        <div class="row itemrow" style="margin-top: 0.2rem">
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/perry.png">
+            </div>
+            <span style="width: 100%">北京</span>
+          </div>
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/perry.png">
+            </div>
+            <span>北京</span>
+          </div>
+          <div class="col col-33">
+            <div style="width: 100%">
+              <img src="/img/perry.png">
+            </div>
+            <span>北京</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="item rtitem">
+        <div style="width: 100%;height: auto" class="row">
+          <label class="route-label col-90">热门线路</label>
+          <label class="route-label col-10">更多</label>
+        </div>
+        <div class="row" style="width: 100%">
+         <a ui></a>
+          <div class="routeimgdiv col-50" ng-click="lxitem()">
+            <img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item rtitem">
+        <div style="width: 100%;height: auto" class="row">
+          <label class="route-label col-90">热门景点</label>
+          <label class="route-label col-10">更多</label>
+        </div>
+        <div class="row" style="width: 100%">
+          <div class="routeimgdiv col-50" ng-click="jditem()">
+            <img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="col-50" style="margin-top: 0.4rem">123</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="item rtitem">
+        <div style="width: 100%;height: auto" class="row">
+          <label class="route-label col-90">电子兑换券</label>
+
+        </div>
+        <div class="row" style="width: 100%">
+          <div class="routeimgdiv col-50" ng-click="dhitem()">
+            <img src="img/perry.png"/>
+
+            <div class="div-shopping">兑换卷</div>
+
+          </div>
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+
+            <div class="div-shopping">兑换卷</div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </ion-content>
+</ion-view>

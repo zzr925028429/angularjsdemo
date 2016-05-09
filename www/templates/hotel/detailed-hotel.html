@@ -1,0 +1,55 @@
+<ion-view view-title="酒店详细">
+  <ion-content>
+    <div class="list">
+    <div class="item slideitem detaileditem">
+      <ion-slide-box class="slidebox" auto-play="true"
+                     slide-interval="4000" delegate-handle="slideimgs" does-continue="true" pager-click="go(index)"
+                     on-slide-changed="go_changed(index)">
+        <ion-slide ng-repeat="imginfo in slideimgs">
+          <div class="box">
+            <img ng-src="{{imginfo.face}}">
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+
+      <div class="item item-button-right detaileditem">
+       <label> 地址</label><br>
+        <label> 热线</label>
+        <i class="ion-ios-location button dmapbtn"></i>
+      </div>
+
+      <div class="item item-button-right detaileditem">
+        <label> 地址</label><br>
+        <label> 热线</label>
+        <i class="ion-ios-arrow-forward button dmapbtn"></i>
+      </div>
+      <div class="item item-button-right detaileditem">
+        <label> 地址</label><br>
+        <label> 热线</label>
+        <i class="ion-ios-arrow-forward button dmapbtn"></i>
+      </div>
+
+      <div class="item item-button-right detaileditem">
+
+        <label>大床房</label><br>
+        <label> 2222</label>
+        <label class="price">222</label>
+        <i class="ion-ios-arrow-down button dmapbtn" ng-click="toggle()"> </i>
+
+   <div class="yd" ng-hide="reserve">
+     <label>楼层:</label>
+     <label>加床</label>
+     <br>
+     <label>早餐:</label>
+     <label>加床</label>
+     <button class="button button-calm reservebtn">
+      立即预订
+     </button>
+   </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

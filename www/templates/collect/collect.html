@@ -1,0 +1,18 @@
+<ion-view view-title="收藏" hide-nav-bar="false">
+  <ion-content>
+    <ion-list show-delete="shouldShowDelete">
+      <ion-item class="item item-thumbnail-left">
+        <ion-delete-button class=""> <input type="radio" class=""/></ion-delete-button>
+        <img src="cover.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-toggle ng-model="shouldShowDelete">
+      Show Delete?
+    </ion-toggle>
+
+  </ion-content>
+</ion-view>
+

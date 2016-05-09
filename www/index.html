@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="myjs/app.js"></script>
+  <script src="myjs/controllers.js"></script>
+  <script src="myjs/services.js"></script>
+  <script src="myjs/directive.js"></script>
+
+  <script src="myjs/mainctrl.js"></script>
+  <script src="templates/exchange/exchangeCtrl.js"></script>
+  <script src="templates/route/routeCtrl.js"></script>
+  <script src="templates/home/homeCtrl.js"></script>
+  <script src="templates/hotel/hotelCtrl.js"></script>
+ <script src="templates/user/userCtrl.js"></script>
+  <script src="templates/map/mapCtrl.js"></script>
+  <script src="templates/hotel/selecthotelCtrl.js"></script>
+  <script src="templates/hotel/detailedhotelCtrl.js"></script>
+  <script src="templates/user/orderCtrl.js"></script>
+  <script src="templates/collect/collectCtrl.js"></script>
+  <script src="templates/user/useroneCtrl.js"></script>
+  <script src="templates/user/setUserCtrl.js"></script>
+  <script src="templates/user/setusernameCtrl.js"></script>
+  <script src="templates/user/passwordCtrl.js"></script>
+  <script src="templates/route/detailedrouteCtrl.js"></script>
+  <script src="templates/exchange/exchangedetailedCtrl.js"></script>
+  <script src="templates/route/confirmorderCtrl.js"></script>
+<script src="templates/route/ordermessageCtrl.js"></script>
+  <script src="templates/login/LoginCtrl.js"></script>
+  <script src="myjs/routerServices.js"></script>
+<script src="myjs/localStorageService.js"></script>
+  <script src="lib/onezone-datepicker/dist/onezone-datepicker.min.js"></script>
+  <!--map-->
+  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=a1677a5a3799b068e6f3863eaab5f051&plugin=AMap.CitySearch"></script>
+
+</head>
+
+<body ng-app="starter" ng-controller="MainCtrl">
+<!--
+  The nav bar that will be updated as we navigate between views.
+-->
+<ion-nav-bar class="bar-stable">
+  <ion-nav-back-button>
+    返回
+  </ion-nav-back-button>
+
+</ion-nav-bar>
+<!--
+  The views will be rendered in the <ion-nav-view> directive below
+  Templates are in the /templates folder (but you could also
+  have templates inline in this html file if you'd like).
+-->
+<ion-nav-view></ion-nav-view>
+</body>
+</html>

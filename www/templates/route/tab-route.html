@@ -1,0 +1,108 @@
+<ion-view view-title="线路">
+  <ion-content on-swipe-up='onSwipeUp()' scroll="true">
+
+    <div class="bar bar-header item-input-inset routeitem">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+      <button class="button button-clear">
+        搜索
+      </button>
+    </div>
+    <div class="list" id="routelist">
+      <div class="item routeitem">
+        <div class="routeitem1">
+          <button class="button button-stable ">
+            跟团游
+          </button>
+          <button class="button button-stable ">
+            自由行
+          </button>
+        </div>
+        <div class="routeitem2">
+          <button class="button button-stable ">
+            国内跟团
+          </button>
+          <button class="button button-stable ">
+            出境跟团
+          </button>
+          <button class="button button-stable ">
+            周边旅游
+          </button>
+        </div>
+      </div>
+      <div class="item route routeitem">
+        <div style="width: 100%;height: auto">
+          <label class="route-label">热门推荐路线</label>
+        </div>
+
+        <div class="row" style="width: 100%">
+          <div class="routeimgdiv col-50" ng-click="routeitem()">
+          <img src="img/perry.png"/>
+          <div class="routelabeldiv">北京到海南海口双飞6日游 海口进出 呀诺达 蜈支洲 分界洲</div>
+          <div class="div-shopping">无购物精华景点，特色大餐</div>
+          <div style="width: 100%;" class="row">
+            <label  class="price-label col-50">123</label>
+            <button class="button button-assertive gmbtn col-50">立即购买</button>
+          </div>
+        </div>
+        <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+          <div class="routelabeldiv">北京到海南海口双飞6日游 海口进出 呀诺达 蜈支洲 分界洲</div>
+          <div class="div-shopping">无购物精华景点，特色大餐</div>
+          <div style="width: 100%;" class="row">
+            <label  class="price-label col-50">123</label>
+            <button class="button button-assertive gmbtn col-50">立即购买</button>
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+
+      <div class="item route routeitem">
+        <div style="width: 100%;height: auto">
+          <label class="route-label">热门目的地推荐</label>
+        </div>
+        <div class="row">
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+        </div>
+        <div class="row">
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+        </div>
+
+        <div class="row" style="width: 100%">
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+            <div class="routelabeldiv">
+              <button class="button button-calm gtbtn col-50">跟团</button></div>
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="price-labelx col-50">4567</label>
+            </div>
+          </div>
+          <div class="routeimgdiv col-50"><img src="img/perry.png"/>
+            <div class="routelabeldiv"> <button class="button button-calm gtbtn col-50">跟团</button></div>
+            <div class="div-shopping">无购物精华景点，特色大餐</div>
+            <div style="width: 100%;" class="row">
+              <label class="price-label col-50">123</label>
+              <label class="price-labelx col-50">4565</label>
+            </div>
+          </div>
+      </div>
+      <div class="item routeitem">
+
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>
